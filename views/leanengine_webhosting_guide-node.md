@@ -24,7 +24,7 @@ Node.js 的 `package.json` 中可以指定 [很多选项](https://docs.npmjs.com
     "scripts": {
         "start": "node server.js"
     },
-    "engine": {
+    "engines": {
         "node": "4.x"
     },
     "dependencies": {
