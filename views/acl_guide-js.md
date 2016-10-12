@@ -204,6 +204,7 @@
     //该角色存在，但是当前用户未被赋予该角色
     if (userForRole.length === 0) {
       // 为当前用户赋予该角色
+      var administratorRole = new AV.Role('Administrator');
       var relation = administratorRole.getUsers();
       relation.add(AV.User.current());
       administratorRole.save();
