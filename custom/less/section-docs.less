@@ -230,7 +230,7 @@ body {
   > h1 {
     font-size: 32px;
     font-weight: 300;
-    padding-top: 90px;
+    padding-top: 30px;
     margin-top: 0px;
     margin-bottom: 20px;
     .font-logo;
@@ -240,7 +240,7 @@ body {
     // This could help avoid FOUT issue when page is loading
     @github-avatar-height: 24px;
     @heading-margin-bottom-offset: 10px;
-    padding-bottom: (100px + @github-avatar-height + @heading-margin-bottom-offset + 3px) !important;
+    padding-bottom: (@github-avatar-height + @heading-margin-bottom-offset) !important;
     border-bottom: 1px solid @gray-lighter;
 
     a {
