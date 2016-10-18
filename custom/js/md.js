@@ -47,7 +47,7 @@ var updateSidebarAffixShadowWidth = function() {
 };
 
 // Sidebar affix
-var doSideBar = function() {
+var doSideBar = function() { 
   $('.sidebar-loading').removeClass('on');
   $('.sidebar-wrapper').affix({
     offset: {
@@ -101,12 +101,13 @@ var initSmoothScroll = function() {
 };
 
 // Init GitHub links
+// $('#content').prepend("<div class=docs-meta>\
+//     <span class='icon icon-github'></span>\
+//     <a href='https://github.com/leancloud/docs#贡献'>编辑文档</a>\
+//   </div>");
+
 var initGitHubLinks = function() {
   var currentPath = window.location.pathname.match(/.*\/(.+).html/i)[1];
-  $('#content').prepend("<div class=docs-meta>\
-      <span class='icon icon-github'></span>\
-      <a href='https://github.com/leancloud/docs#贡献'>编辑文档</a>\
-    </div>");
   $('.sidebar-wrapper #toc').append("<li class=sidebar-meta><a href='#' class=do-expand-all>展开所有</a> <a href='#top' class=back-to-top>返回顶部</a></li>");
 };
 
@@ -348,10 +349,10 @@ $(function() {
   glueCopy();
   updateScrollSpy();
   addSidebarHoverListener();
-  initGitHubLinks();
+  // initGitHubLinks();
   sidebarExpandAll();
   codeBlockTabber.start();
-  getGitHubContributors();
+  //getGitHubContributors();
   // initSmoothScroll();
 
   var arr = $('#toc ul').parents('li');
