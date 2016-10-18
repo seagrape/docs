@@ -106,6 +106,7 @@ var initSmoothScroll = function() {
 //     <a href='https://github.com/leancloud/docs#贡献'>编辑文档</a>\
 //   </div>");
 
+
 var initGitHubLinks = function() {
   var currentPath = window.location.pathname.match(/.*\/(.+).html/i)[1];
   $('.sidebar-wrapper #toc').append("<li class=sidebar-meta><a href='#' class=do-expand-all>展开所有</a> <a href='#top' class=back-to-top>返回顶部</a></li>");
