@@ -6,7 +6,9 @@
         <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">功能概览</a>
           <ul class="dropdown-menu">
-            <li><a href="storage_overview.html">数据存储服务总览</a></li>
+            <li><a href="oauth2_provider.html">开放平台接入</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="storage_overview.html">广告业务务总览</a></li>
             <li><a href="push_guide.html">消息推送服务总览</a></li>
             <li><a href="realtime_v2.html">实时通信服务总览</a></li>
             <li role="separator" class="divider"></li>
@@ -20,23 +22,28 @@
           </ul>
         </li>
         <li class="dropdown">
+          <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">REST API</a>
+          <ul class="dropdown-menu">
+            <li><a href="rest_api.html">广告业务 API</a></li>
+            <li><a href="rest_api.html#Push_通知">效果统计 API</a></li>
+            <li><a href="realtime_rest_api.html">实时通信 API</a></li>
+            <li><a href="rest_api.html#统计数据_API">消息推送 API</a></li>
+            <li><a href="status_system.html#REST_API">商业数据 API</a></li>
+            
+            <!-- <li><a href="rest_faq.html">FAQ</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">Objective-C</a>
           <ul class="dropdown-menu">
             <li><a href="sdk_setup-objc.html">SDK 安装指南</a></li>
-            <li><a href="leanstorage-started-objc.html">数据存储快速入门</a></li>
-            <li><a href="leanstorage_guide-objc.html">数据存储开发指南</a></li>
+            <li role="separator" class="divider"></li>
             <li><a href="ios_push_guide.html">消息推送开发指南</a></li>
             <li><a href="ios_push_cert.html">iOS 推送证书设置指南</a></li>
-            <li role="separator" class="divider"></li>
             <li><a href="realtime_guide-objc.html">实时通信开发指南</a></li>
-            <li><a href="chatkit-objc.html">ChatKit 使用指南</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="relation_guide-objc.html">数据模型设计指南</a></li>
             <li><a href="acl_guide-objc.html">权限管理使用指南</a></li>
             <li><a href="ios_statistics.html">统计分析开发指南</a></li>
-            {% if node!='qcloud' %}
-            <li><a href="sms_guide-objc.html">短信服务使用指南</a></li>
-            {% endif %}
             <li><a href="ios_crashreporting_guide.html">崩溃报告使用指南</a></li>
             <li><a href="ios-macos-faq.html">FAQ</a></li>
             <li><a href="/api-docs/iOS/index.html" target="_blank">SDK API</a></li>
@@ -46,27 +53,16 @@
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">Swift</a>
           <ul class="dropdown-menu">
             <li><a href="sdk_setup-swift.html">SDK 安装指南</a></li>
-            <li><a href="leanstorage_guide-swift.html">数据存储开发指南</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">Android</a>
           <ul class="dropdown-menu">
             <li><a href="sdk_setup-android.html">SDK 安装指南</a></li>
-            <li><a href="leanstorage-started-android.html">数据存储快速入门</a></li>
-            <li><a href="leanstorage_guide-android.html">数据存储开发指南</a></li>
+            <li role="separator" class="divider"></li>
             <li><a href="android_push_guide.html">消息推送开发指南</a></li>
-            <li role="separator" class="divider"></li>
             <li><a href="realtime_guide-android.html">实时通信开发指南</a></li>
-            <li><a href="chatkit-android.html">ChatKit 使用指南</a></li>
-            <li><a href="livekit-android.html">LiveKit 使用指南</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="relation_guide-android.html">数据模型设计指南</a></li>
-            <li><a href="acl_guide-android.html">权限管理使用指南</a></li>
-            <li><a href="android_statistics.html">统计分析开发指南</a></li>
-            {% if node!='qcloud' %}
-            <li><a href="sms_guide-android.html">短信服务使用指南</a></li>
-            {% endif %}
             <li><a href="android_faq.html">FAQ</a></li>
             <li><a href="/api-docs/android/index.html" target="_blank">SDK API</a></li>
           </ul>
@@ -75,86 +71,38 @@
         <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">PHP</a>
           <ul class="dropdown-menu">
-            <li><a href="leanstorage_guide-php.html">数据存储开发指南</a></li>
+            <li><a href="leanstorage_guide-php.html">SDK 安装指南<</a></li>
             <li><a href="/api-docs/php/" target="_blank">SDK API</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">云引擎</li>
-            <li><a href="leanengine_webhosting_guide-php.html">网站托管开发指南</a></li>
-            <li><a href="leanengine_cloudfunction_guide-php.html">云函数开发指南</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">Java</a>
           <ul class="dropdown-menu">
             <li><a href="sdk_setup-java.html">SDK 安装指南</a></li>
-            <li><a href="leanstorage_guide-java.html">数据存储开发指南</a></li>
-            <li class="dropdown-header">云引擎</li>
-            <li><a href="leanengine_webhosting_guide-java.html">网站托管开发指南</a></li>
-            <li><a href="leanengine_cloudfunction_guide-java.html">云函数开发指南</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">REST API</a>
-          <ul class="dropdown-menu">
-            <li><a href="rest_api.html">数据存储 API</a></li>
-            <li><a href="rest_api.html#Push_通知">消息推送 API</a></li>
-            <li><a href="realtime_rest_api.html">实时通信 API</a></li>
-            {% if node!='qcloud' %}
-            <li><a href="rest_sms_api.html">短信验证 API</a></li>
-            {% endif %}
-            <li><a href="rest_api.html#统计数据_API">数据统计 API</a></li>
-            <li><a href="status_system.html#REST_API">应用内社交 API</a></li>
-            <li><a href="app_search_guide.html#搜索_API">应用内搜索 API</a></li>
-            <li><a href="cql_guide.html">CQL 查询语言详解</a></li>
-            <li><a href="oauth2_provider.html">开放平台接入</a></li>
-            <!-- <li><a href="rest_faq.html">FAQ</a></li> -->
+            <li><a href="leanstorage_guide-java.html">SDK API</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">RTB引擎</a>
           <ul class="dropdown-menu">
-          <li><a href="leanengine_overview.html">云引擎总览</a></li>
-          <li><a href="leanengine_quickstart.html">云引擎快速入门</a></li>
-          <li><a href="leanengine_plan.html">云引擎运行方案</a></li>
+          <li><a href="leanengine_overview.html">RTB引擎总览</a></li>
+          <li><a href="leanengine_quickstart.html">RTB引擎快速入门</a></li>
           <li role="separator" class="divider"></li>
-          <li class="dropdown-header">Node.js</li>
-          <li><a href="leanengine_webhosting_guide-node.html">网站托管开发指南</a></li>
-          <li><a href="leanengine_cloudfunction_guide-node.html">云函数开发指南</a></li>
-          <li class="dropdown-header">Python</li>
-          <li><a href="leanengine_webhosting_guide-python.html">网站托管开发指南</a></li>
-          <li><a href="leanengine_cloudfunction_guide-python.html">云函数开发指南</a></li>
-          <li class="dropdown-header">PHP</li>
-          <li><a href="leanengine_webhosting_guide-php.html">网站托管开发指南</a></li>
-          <li><a href="leanengine_cloudfunction_guide-php.html">云函数开发指南</a></li>
-          <li class="dropdown-header">Java</li>
-          <li><a href="leanengine_webhosting_guide-java.html">网站托管开发指南</a></li>
-          <li><a href="leanengine_cloudfunction_guide-java.html">云函数开发指南</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="leanengine_examples.html">云引擎项目示例</a></li>
-          <li><a href="leanengine_cli.html">云引擎命令行工具</a></li>
-          <li><a href="acl_guide_leanengine.html">在云引擎中管理 ACL</a></li>
           <li><a href="leanengine_faq.html">FAQ</a></li>
-          <li><a href="leancache_guide.html">LeanCache 使用指南</a></li>
+          <li><a href="leancache_guide.html">RTB引擎 使用指南</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown" href="#">更多</a>
           <ul class="dropdown-menu">
-            {% if node != 'qcloud' %}
-            <li><a href="status_system.html">应用内社交使用指南</a></li>
-            <li><a href="sns.html">第三方平台账号登录 SNS 开发指南</a></li>
-            <li><a href="feedback.html">用户反馈开发指南</a></li>
-            {% endif %}
-            <li><a href="app_search_guide.html">应用内搜索和 DeepLink 开发指南</a></li>
-            <li><a href="app_data_share.html">应用之间数据共享（Class 绑定）</a></li>
             <li><a href="user_groups.html">用户群分析指南</a></li>
             <li><a href="leaninsight_guide.html">离线数据分析使用指南</a></li>
             <li class="divider"></li>
             <li><a href="tutorials.html">教程</a></li>
            <li><a href="demo.html">Demo</a></li>
-           <li><a href="http://leancloud.sexy" target="_blank">第三方库</a></li>
+           <li><a href="http://sexy.spring-cloud.io" target="_blank">第三方库</a></li>
           </ul>
         </li>
       </ul>
